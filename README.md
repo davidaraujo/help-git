@@ -11,8 +11,11 @@ Add the remote repo:
 
 Create a local repo and perform first commit:
 > cd my_project
+
 > git init
+
 > git add *
+
 > git commit -m "My initial commit message"
 
 First Pull all the changes from the remote repo:
