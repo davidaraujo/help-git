@@ -3,19 +3,22 @@ help-git
 
 Manual of the git commands most used
 
+Check the remote repo configurations:
+> git remote -v
 
-** cd my_projectgit init
-git add *
-git commit -m "My initial commit message"
+Add the remote repo:
+> git remote add REPO https://github.com/davidaraujo/Python-coursolve.git # REPO is the name we want to give this remote configuration
 
-**Add the remote repo:
-git remote -v
-git remote add REPO_DAVID https://github.com/davidaraujo/Python-coursolve.git
+Create a local repo and perform first commit:
+> cd my_project
+> git init
+> git add *
+> git commit -m "My initial commit message"
 
-**First Pull from the remote repo:
-git pull —rebase REPO_DAVID master  # master is the branch name
+First Pull all the changes from the remote repo:
+> git pull —rebase REPO master  # master is the branch name
 
-**Then Push the files from local repo to remote repo:
-git push REPO_DAVID 
+Then Push the local repo to the remote repo:
+> git push REPO 
 
 
